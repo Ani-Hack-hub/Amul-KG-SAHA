@@ -1,0 +1,166 @@
+.stick-item {
+  border: 0.2rem solid black;
+  margin-left: 1rem;
+  margin-top: 0.1rem;
+  width: 15rem;
+  height: 15rem;
+  background-repeat: no-repeat;
+  background-size: 15rem;
+}
+
+.cont {
+  text-align: center;
+  position: relative;
+  top: -3rem;
+  right: -1.5rem;
+  font-weight: bolder;
+  width: 15rem;
+  transform: translate(-0.5rem, 0.5rem);
+}
+
+.stick > ul {
+  list-style: none;
+  display: grid;
+  row-gap: 2rem;
+  grid-template-columns: auto auto auto auto;
+  justify-items: center;
+}
+
+.cont > span {
+  font-weight: bolder;
+  font-weight: bold;
+}
+
+.stick {
+  margin-top: 2rem;
+}
+
+.stick-item:hover {
+  background-color: rgb(105, 105, 105);
+  border-color: #ff00d4;
+  transform: translate(0.5rem, 0.5rem);
+  box-shadow: -0.5rem -0.5rem rgb(184, 184, 184);
+}
+#choco-almon-cont,
+#strawberry-cont,
+#sweet-heart-cont,
+#choco-truffle-cont,
+#frostik-cont,
+#fundoo-chakri-cont,
+#fundoo-super-cont,
+#fundoo-currly-cont,
+#fundoo-mango-cont,
+#duetz-mango-cont,
+#duetz-raspberry-cont,
+#duetz-k-mango-cont,
+#lickz-mango-cont,
+#lickz-orange-cont,
+#choco-pop-cont,
+#coffee-bar-cont,
+#dark-c-frostik-cont,
+#dark-c-bar-cont,
+#choco-bar-cont,
+#asli-aam-cont {
+  visibility: hidden;
+}
+
+#choco-almon {
+  background-image: url("../assets/stick/choco-almond.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#strawberry {
+  background-image: url("../assets/stick/epic-strawberry.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#sweet-heart {
+  background-image: url("../assets/stick/sweet-heart.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#choco-truffle {
+  background-image: url("../assets/stick/epic-choco-truffle.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#frostik {
+  background-image: url("../assets/stick/frostik.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#fundoo-chakri {
+  background-image: url("../assets/stick/fundoo-chakri.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#fundoo-super {
+  background-image: url("../assets/stick/fundoo-super.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#fundoo-currly {
+  background-image: url("../assets/stick/fundoo-curly.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#fundoo-mango {
+  background-image: url("../assets/stick/fundoo-mango.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#duetz-mango {
+  background-image: url("../assets/stick/duetz-mango.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#duetz-raspberry {
+  background-image: url("../assets/stick/duetz-raspberry.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#duetz-k-mango {
+  background-image: url("../assets/stick/duetz-k-mango.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#lickz-mango {
+  background-image: url("../assets/stick/lickz-mango.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#lickz-orange {
+  background-image: url("../assets/stick/lickz-orange.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#choco-pop {
+  background-image: url("../assets/stick/choco-pop.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#coffee-bar {
+  background-image: url("../assets/stick/coffee-bar.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#dark-c-frostik {
+  background-image: url("../assets/stick/dark-c-frostik.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#dark-c-bar {
+  background-image: url("../assets/stick/dark-c-bar.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#choco-bar {
+  background-image: url("../assets/stick/choco-bar.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#asli-aam {
+  background-image: url("../assets/stick/asli-aam.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}

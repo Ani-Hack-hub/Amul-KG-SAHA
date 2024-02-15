@@ -1,0 +1,128 @@
+.kulfi-item {
+  border: 0.2rem solid black;
+  margin-left: 1rem;
+  margin-top: 0.1rem;
+  width: 15rem;
+  height: 15rem;
+  background-repeat: no-repeat;
+  background-size: 15rem;
+  transition: 0.3s step-end;
+}
+
+.cont {
+  text-align: center;
+  position: relative;
+  top: -3rem;
+  right: -1.5rem;
+  font-weight: bolder;
+  width: 15rem;
+  transform: translate(-0.5rem, 0.5rem);
+}
+
+.kulfi > ul {
+  list-style: none;
+  display: grid;
+  row-gap: 2rem;
+  grid-template-columns: auto auto auto auto;
+  justify-items: center;
+}
+
+.cont > span {
+  font-weight: bolder;
+  font-weight: bold;
+}
+
+.kulfi {
+  margin-top: 2rem;
+}
+
+.kulfi-item:hover {
+  background-color: rgb(105, 105, 105);
+  border-color: #ff00d4;
+  transform: translate(0.5rem, 0.5rem);
+  box-shadow: -0.5rem -0.5rem rgb(184, 184, 184);
+}
+#rabdi-cont,
+#rosogolla-cont,
+#rajbhoj-cont,
+#pista-malai-cont,
+#mawa-malai-cont,
+#mawa-malai-cont,
+#badhahi-cont,
+#shahi-cont,
+#kaju-malai-cont,
+#rajwadi-cont,
+#bombay-cont,
+#koha-cont,
+#kashmiri-cont,
+#rajasthani-cont,
+#punjabi-cont {
+  visibility: hidden;
+}
+
+#punjabi {
+  background-image: url("../amul-pdts/kulfi/punjabi.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#rajasthani {
+  background-image: url("../amul-pdts/kulfi/rajasthani.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#kashmiri {
+  background-image: url("../amul-pdts/kulfi/kashmiri.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+
+#bombay {
+  background-image: url("../amul-pdts/kulfi/bombay.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#rajwadi {
+  background-image: url("../amul-pdts/kulfi/rajwadhi.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#kaju-malai {
+  background-image: url("../amul-pdts/kulfi/kaju-malai.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#shahi {
+  background-image: url("../amul-pdts/kulfi/shahi-badam.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#badhahi {
+  background-image: url("../amul-pdts/kulfi/badshahi.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#mawa-malai {
+  background-image: url("../amul-pdts/kulfi/mawa-malai.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#pista-malai {
+  background-image: url("../amul-pdts/kulfi/pista-malai.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#rajbhoj {
+  background-image: url("../amul-pdts/kulfi/rajbhoj.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#rosogolla {
+  background-image: url("../amul-pdts/kulfi/rosogolla.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#rabdi {
+  background-image: url("../amul-pdts/kulfi/rabdi.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}

@@ -1,0 +1,199 @@
+.cup > ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.cup-item {
+  width: 14.5rem;
+  height: 14.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.cup > ul > li > div:hover {
+  background-color: rgb(105, 105, 105);
+  border-color: #ff00d4;
+  transform: translate(0.5rem, 0.5rem);
+  box-shadow: -0.5rem -0.5rem rgb(184, 184, 184);
+}
+.cont {
+  position: relative;
+  top: -3.5rem;
+  font-size: 0.9rem;
+  width: 14rem;
+  text-align: center;
+}
+.cont::first-line {
+  font-weight: bolder;
+}
+
+#Cup-100ml-chocolate {
+  z-index: -1;
+  background-image: url("../amul-pdts/100ml/Cup-Choco-Chips.jpg"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
+  background-size: 14.5rem 14.5rem;
+}
+#Cup-100ml-butter-scotch {
+  z-index: -1;
+  background-image: url("../amul-pdts/100ml/Cup-Butterscotch-Bliss.jpg"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
+  background-size: 14.5rem 14.5rem;
+}
+#Cup-100ml-kesar-pista {
+  z-index: -1;
+  background-image: url("../amul-pdts/100ml/Cup-Kesar-Pista-Royale.jpg"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
+  background-size: 14.5rem 14.5rem;
+}
+#Cup-100ml-vanilla {
+  z-index: -1;
+  background-image: url("../amul-pdts/100ml/Cup-Vanilla-Royale.jpg"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
+  background-size: 14.5rem 14.5rem;
+}
+#Cup-100ml-alphonso {
+  z-index: -1;
+  background-image: url("../amul-pdts/100ml/Cup-Alphonso-Mango.jpg"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
+  background-size: 14.5rem 14.5rem;
+}
+#Cup-65ml-green-pista {
+  z-index: -1;
+  background-image: url("../amul-pdts/100ml/green pista 65ml.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
+  background-size: 14.5rem 14.5rem;
+}
+#Cup-55ml-strawberry {
+  z-index: -1;
+  background-image: url("../amul-pdts/100ml/Cup-Strawberry-55ml.jpeg"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
+  background-size: 14.5rem 14.5rem;
+}
+#Cup-55ml-vanilla {
+  z-index: -1;
+  background-image: url("../amul-pdts/100ml/Cup-Vanilla-Royale-55ml.jpeg"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
+  background-size: 14.5rem 14.5rem;
+}
+
+#Cup-100ml-vanilla-cont {
+  transform: translateX(1rem);
+  visibility: hidden;
+}
+#Cup-100ml-chocolate-cont {
+  visibility: hidden;
+}
+#Cup-100ml-butter-scotch-cont {
+  visibility: hidden;
+}
+#Cup-100ml-kesar-pista-cont {
+  visibility: hidden;
+}
+#Cup-100ml-alphonso-cont {
+  visibility: hidden;
+}
+#Cup-55ml-vanilla-cont {
+  visibility: hidden;
+}
+#Cup-65ml-green-pista-cont {
+  visibility: hidden;
+}
+#Cup-55ml-strawberry-cont {
+  visibility: hidden;
+}
+
+@media (width <= 768px) {
+  .cup > ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+  }
+  * {
+    font-size: 10px;
+  }
+
+  .menubar {
+    height: 4rem;
+    padding: 0.1rem;
+  }
+  .menubar > li {
+    height: 3.5rem;
+    justify-items: center;
+  }
+}
+
+@media (width <=1024px) {
+  .cup > ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+  }
+  * {
+    font-size: 12px;
+  }
+}
+
+@media (width <= 768px) {
+  * {
+    font-size: 10px;
+  }
+  .logo {
+    margin-left: 3rem;
+  }
+}
+
+@media (width <= 425px) {
+  * {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 6px;
+  }
+  .cup > ul {
+    margin-top: 20rem;
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+  }
+  .logo {
+    margin-left: 0%;
+  }
+  .nav_item {
+    justify-items: center;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+  .cup-item {
+    width: 50rem;
+    height: 50rem;
+    background-size: 50rem;
+  }
+  .cont {
+    z-index: 5;
+    position: relative;
+    top: -30rem;
+    font-size: initial;
+  }
+  .cont>span{
+    font-size: initial;
+    font-weight: bold;
+  }
+  #Cup-100ml-chocolate,
+  #Cup-100ml-butter-scotch,
+  #Cup-100ml-kesar-pista,
+  #Cup-100ml-vanilla,
+  #Cup-100ml-alphonso,
+  #Cup-65ml-green-pista,
+  #Cup-55ml-strawberry,
+  #Cup-55ml-vanilla {
+    background-size: 50rem 50rem;
+  }
+}

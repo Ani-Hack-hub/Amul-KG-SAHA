@@ -1,0 +1,201 @@
+.jumbo-cup > ul {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+.jumbo-cup-item {
+  width: 14rem;
+  height: 14rem;
+  transition: 0.3s ease-in-out;
+}
+
+.cont {
+  position: relative;
+  top: -4.9rem;
+  font-size: 0.9rem;
+  width: 14rem;
+  text-align: center;
+}
+
+.cont::first-line {
+  font-weight: bolder;
+}
+
+#jumbo-cup-butterscotch-cont {
+  visibility: hidden;
+}
+#jumbo-cup-choco-brownie-cont {
+  visibility: hidden;
+}
+#jumbo-cup-fruit-n-nut-cont {
+  visibility: hidden;
+  top: -5.5rem;
+}
+#jumbo-cup-golden-pearl-cont {
+  visibility: hidden;
+  top: -7.5rem;
+}
+#jumbo-cup-king-alphanso-cont {
+  visibility: hidden;
+}
+#jumbo-cup-rajbhoj-cont {
+  visibility: hidden;
+  top: -6.5rem;
+}
+#jumbo-cup-shalimar-cont {
+  visibility: hidden;
+  top: -5.5rem;
+}
+#jumbo-cup-haldi-cont {
+  visibility: hidden;
+  top: -5.4rem;
+}
+#jumbo-cup-pan-nawabi-cont {
+  visibility: hidden;
+  top: -5.3rem;
+}
+#jumbo-cup-butterscotch {
+  background-image: url("../amul-pdts/jumbo-cup/Jumbo-Cup-Butterscotch-Bliss.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
+  background-size: 14rem 14rem;
+}
+
+#jumbo-cup-choco-brownie {
+  background-image: url("../amul-pdts/jumbo-cup/Jumbo-Cup-Chocolate-Brownie.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
+  background-size: 14rem 14rem;
+}
+#jumbo-cup-fruit-n-nut {
+  background-image: url("../amul-pdts/jumbo-cup/Jumbo-Cup-Fruit-N-Nut-Fantasy.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
+  background-size: 14rem 14rem;
+}
+#jumbo-cup-golden-pearl {
+  background-image: url("../amul-pdts/jumbo-cup/Jumbo-Cup-Golden-Pearl-2.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
+  background-size: 14rem 14rem;
+}
+#jumbo-cup-king-alphanso {
+  background-image: url("../amul-pdts/jumbo-cup/Jumbo-Cup-King-Alphonso.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
+  background-size: 14rem 14rem;
+}
+#jumbo-cup-haldi {
+  background-image: url("../amul-pdts/jumbo-cup/Jumbo-Cup-Haldi-Ice-Cream.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
+  background-size: 14rem 14rem;
+}
+#jumbo-cup-rajbhoj {
+  background-image: url("../amul-pdts/jumbo-cup/Jumbo-Cup-Rajbhoj.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
+  background-size: 14rem 14rem;
+}
+#jumbo-cup-shalimar {
+  background-image: url("../amul-pdts/jumbo-cup/Jumbo-Cup-Shalimar.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
+  background-size: 14rem 14rem;
+}
+#jumbo-cup-pan-nawabi {
+  background-image: url("../amul-pdts/jumbo-cup/Jumbo-Cup-Pan-Nawabi.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
+  background-size: 14rem 14rem;
+}
+.jumbo-cup > ul > li > div:hover {
+  background-color: rgb(105, 105, 105);
+  border-color: #ff00d4;
+  transform: translate(0.5rem, 0.5rem);
+  box-shadow: -0.5rem -0.5rem rgb(184, 184, 184);
+}
+
+@media (width <= 768px) {
+  .jumbo-cup > ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+  }
+  * {
+    font-size: 10px;
+  }
+
+  .menubar {
+    height: 4rem;
+    padding: 0.1rem;
+  }
+  .menubar > li {
+    height: 3.5rem;
+    justify-items: center;
+  }
+}
+
+@media (width <=1024px) {
+  .jumbo-cup > ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+  }
+  * {
+    font-size: 12px;
+  }
+}
+
+@media (width <= 768px) {
+  * {
+    font-size: 10px;
+  }
+  .logo {
+    margin-left: 3rem;
+  }
+}
+
+@media (width <= 425px) {
+  * {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 6px;
+  }
+  .jumbo-cup > ul {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+  }
+  .logo {
+    margin-left: 0%;
+  }
+  .nav_item {
+    justify-items: center;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+  .jumbo-cup-item {
+    width: 50rem;
+    height: 50rem;
+    background-size: 50rem;
+  }
+  .cont {
+    z-index: 5;
+    position: relative;
+    top: -20rem;
+    font-size: initial;
+  }
+  #jumbo-cup-butterscotch,
+  #jumbo-cup-choco-brownie,
+  #jumbo-cup-fruit-n-nut,
+  #jumbo-cup-golden-pearl,
+  #jumbo-cup-king-alphanso,
+  #jumbo-cup-haldi,
+  #jumbo-cup-rajbhoj,
+  #jumbo-cup-shalimar,
+  #jumbo-cup-pan-nawabi {
+    background-size: 50rem 50rem;
+  }
+}

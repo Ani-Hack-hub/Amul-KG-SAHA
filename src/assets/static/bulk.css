@@ -1,0 +1,114 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+.bulk > ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  justify-items: center;
+  row-gap: 3rem;
+}
+.bulk > ul > li {
+  list-style: none;
+}
+
+.bulk-item {
+  width: 14.5rem;
+  height: 14.5rem;
+  background-image: url("../amul-pdts/bulk/bulk_img.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
+  background-size: 14.5rem 14.5rem;
+  transition: 0.3s ease-in-out;
+}
+.cont {
+  position: relative;
+  top: -3.5rem;
+  font-size: 0.9rem;
+  width: 14rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.bulk-item:hover {
+  background-color: rgb(105, 105, 105);
+  border-color: #ff00d4;
+  transform: translate(0.5rem, 0.5rem);
+  box-shadow: -0.5rem -0.5rem rgb(184, 184, 184);
+}
+
+.cont {
+  visibility: hidden;
+}
+
+@media (width <= 768px) {
+  .bulk > ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+  }
+  * {
+    font-size: 10px;
+  }
+
+  .menubar {
+    height: 4rem;
+    padding: 0.1rem;
+  }
+  .menubar > li {
+    height: 3.5rem;
+    justify-items: center;
+  }
+}
+
+@media (width <=1024px) {
+  .bulk > ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+  }
+  * {
+    font-size: 12px;
+  }
+}
+
+@media (width <= 768px) {
+  * {
+    font-size: 10px;
+  }
+  .logo {
+    margin-left: 3rem;
+  }
+}
+
+@media (width <= 425px) {
+  * {
+    overflow-x: hidden;
+    font-size: 6px;
+  }
+  .bulk > ul {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .nav_item {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+  .logo {
+    margin-left: 0;
+  }
+  .bulk-item {
+    width: 50rem;
+    height: 50rem;
+    background-size: 50rem 50rem;
+  }
+  .cont {
+    z-index: 5;
+    position: relative;
+    top: -20rem;
+    font-size: initial;
+  }
+}

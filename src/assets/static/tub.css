@@ -1,0 +1,230 @@
+.tub-item {
+  border: 0.2rem solid black;
+  margin-left: 1rem;
+  margin-top: 0.1rem;
+  width: 15rem;
+  height: 15rem;
+  background-repeat: no-repeat;
+  background-size: 15rem;
+  transition: 0.3s ease-in-out;
+}
+
+.cont {
+  transform: translate(-0.5rem, 0.5rem);
+}
+
+.tub > ul {
+  list-style: none;
+  display: grid;
+  row-gap: auto;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+}
+
+.cont > span {
+  font-weight: bolder;
+  font-weight: bold;
+}
+
+.tub {
+  margin-top: 2rem;
+}
+
+.tub-item:hover {
+  background-color: rgb(105, 105, 105);
+  border-color: #ff00d4;
+  transform: translate(0.5rem, 0.5rem);
+  box-shadow: -0.5rem -0.5rem rgb(184, 184, 184);
+}
+
+#butterscotch {
+  background-image: url("../amul-pdts/cone/Butterscotch cone.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+
+#chocolate {
+  background-image: url("../amul-pdts/cone/Choco-Crunch.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+
+#two_in_one {
+  background-image: url("../amul-pdts/cone/Two-in-One.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+
+#black_current {
+  background-image: url("../amul-pdts/cone/Black-Currant_with_transparent.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#cookie_crunch {
+  background-image: url("../amul-pdts/cone/cookie_crunch.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+
+#choco_vanilla {
+  background-image: url("../amul-pdts/cone/choco_vanilla.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+
+#pista_badam {
+  background-image: url("../amul-pdts/cone/Pista-Badam.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+
+#roasted_almon {
+  background-image: url("../amul-pdts/1L tub/Roasted-Almond.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+
+#rajbhoj_tub {
+  background-image: url("../amul-pdts/1L tub/Rajbhog.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#moroccan_tub {
+  background-image: url("../amul-pdts/1L tub/Moroccan-Dry-Fruit.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+#king_aphan {
+  background-image: url("../amul-pdts/1L tub/King-Alphonso.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+
+#fnt {
+  background-image: url("../amul-pdts/1L tub/Fruit-N-Nut-Fantasy.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+
+#choco_browine {
+  background-image: url("../amul-pdts/1L tub/Chocolate-Brownie.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+
+#choco_chip {
+  background-image: url("../amul-pdts/1L tub/Choco-Chips.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  cursor: pointer;
+}
+
+#cookie_crunch_cont,
+#choco_vanilla_cont,
+#chocolate_cont,
+#butterscotch_cont #pista_badam_cont,
+#roasted_almon_cont,
+#rajbhoj_tub_cont,
+#moroccan_tub_cont,
+#king_aphan_cont,
+#fnt_cont,
+#two_in_one_cont,
+#choco_browine_cont,
+#black_current_cont,
+#choco_chip_cont {
+  visibility: hidden;
+  z-index: 1;
+  position: relative;
+  top: -5rem;
+  width: 15rem;
+  height: 5rem;
+  left: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  transform: translate(0.5rem, 0.5rem);
+}
+@media (width <= 768px) {
+  .tub > ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+  }
+  * {
+    font-size: 10px;
+  }
+
+  .menubar {
+    height: 4rem;
+    padding: 0.1rem;
+  }
+  .menubar > li {
+    height: 3.5rem;
+    justify-items: center;
+  }
+}
+
+@media (width <=1024px) {
+  .tub > ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+  }
+  * {
+    font-size: 12px;
+  }
+}
+
+@media (width <= 768px) {
+  * {
+    font-size: 10px;
+  }
+  .logo {
+    margin-left: 3rem;
+  }
+}
+
+@media (width <= 425px) {
+  * {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 6px;
+  }
+  .tub > ul {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+  }
+  .logo {
+    margin-left: 0%;
+  }
+  .nav_item {
+    justify-items: center;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+  .tub-item {
+    width: 50rem;
+    height: 50rem;
+    background-size: 50rem;
+  }
+  .cont {
+    z-index: 5;
+    position: relative;
+    top: -20rem;
+    font-size: initial;
+  }
+  #cookie_crunch_cont,
+  #choco_vanilla_cont,
+  #chocolate_cont,
+  #butterscotch_cont #pista_badam_cont,
+  #roasted_almon_cont,
+  #rajbhoj_tub_cont,
+  #moroccan_tub_cont,
+  #king_aphan_cont,
+  #fnt_cont,
+  #two_in_one_cont,
+  #choco_browine_cont,
+  #black_current_cont,
+  #choco_chip_cont {
+    background-size: 50rem 50rem;
+  }
+}
