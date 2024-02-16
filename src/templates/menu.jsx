@@ -4,67 +4,67 @@ import { Over, Out } from "../assets/button-click";
 function Menu() {
   var element = (
     <section>
-      <ul class="pdt-list">
+      <ul className="pdt-list">
         <li>
           <a href="/amul/bulk">
-            <div class="opt" id="bulk-item" ></div>
-            <div class="name" id="bulk">
+            <div className="opt" id="bulk-item" ></div>
+            <div className="name" id="bulk">
               AMUL BULK
             </div>
           </a>
         </li>
         <li>
           <a href="/amul/combo">
-            <div class="opt" id="combo-item" ></div>
-            <div class="name" id="combo">
+            <div className="opt" id="combo-item" ></div>
+            <div className="name" id="combo">
               AMUL COMBO
             </div>
           </a>
         </li>
         <li>
           <a href="/amul/cone">
-            <div class="opt" id="cone-item" ></div>
-            <div class="name" id="cone">
+            <div className="opt" id="cone-item" ></div>
+            <div className="name" id="cone">
               AMUL CONE
             </div>
           </a>
         </li>
         <li>
           <a href="/amul/cup">
-            <div class="opt" id="cup-item" ></div>
-            <div class="name" id="cup">
+            <div className="opt" id="cup-item" ></div>
+            <div className="name" id="cup">
               AMUL CUP
             </div>
           </a>
         </li>
         <li>
           <a href="/amul/jumbo">
-            <div class="opt" id="jumbo-item"></div>
-            <div class="name" id="jumbo">
+            <div className="opt" id="jumbo-item"></div>
+            <div className="name" id="jumbo">
               AMUL JUMBO CUP
             </div>
           </a>
         </li>
         <li>
           <a href="/amul/stick">
-            <div class="opt" id="stk-item"></div>
-            <div class="name" id="stk">
+            <div className="opt" id="stk-item"></div>
+            <div className="name" id="stk">
               AMUL STICK
             </div>
           </a>
         </li>
         <li>
           <a href="/amul/tub">
-            <div class="opt" id="tub-item"></div>
-            <div id="tub" class="name">
+            <div className="opt" id="tub-item"></div>
+            <div id="tub" className="name">
               AMUL TUB
             </div>
           </a>
         </li>
         <li>
           <a href="/amul/kulfi">
-            <div class="opt" id="kulfi-item"></div>
-            <div id="kulfi" class="name">
+            <div className="opt" id="kulfi-item"></div>
+            <div id="kulfi" className="name">
               AMUL KULFI
             </div>
           </a>

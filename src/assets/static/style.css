@@ -103,3 +103,9 @@ a {
     margin-left: 1rem;
   }
 }
+
+@media (height <= 1108px){
+  *{
+    font-size: 13.9px;
+  }
+}

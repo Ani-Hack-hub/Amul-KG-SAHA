@@ -13,8 +13,14 @@ function App(elt_name) {
   // console.log(elt_name.elt);
   var element;
   switch (elt_name.elt) {
-    case "Bulk":
-      element = <Bulk></Bulk>;
+    case "Bulk -1":
+      element = <Bulk MyProp = {1}></Bulk>;
+      break;
+    case "Bulk -2":
+      element = <Bulk MyProp = {2}></Bulk>;
+      break;
+    case "Bulk -3":
+      element = <Bulk MyProp = {3}></Bulk>;
       break;
     case "Combo":
       element = <Combo></Combo>;
