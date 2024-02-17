@@ -1,76 +1,73 @@
-html{
-    overflow-x: hidden;
-    /* height: 100%; */
+.pdt-list {
+  margin-top: 4.5rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 3.2rem;
+  justify-items: center;
+  align-items: center;
+  cursor: pointer;
 }
-.pdt-list{
-    margin-top: 2rem;
-    margin-left: 2rem;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    row-gap: 3.2rem;
-    cursor: pointer;
+.pdt-list > li {
+  list-style: none;
 }
-.pdt-list>li{
-    list-style: none;
+.name {
+  font-size: rem;
+  position: relative;
+  top: -2rem;
+  font-weight: bolder;
+  transform: translate(0.5rem, 1rem);
 }
-.name{
-    font-size: rem;
-    position: relative;
-    top: -2rem;
-    font-weight: bolder;
-    transform: translate(0.5rem, 1rem);
+.opt {
+  width: 15rem;
+  height: 15rem;
+  background-size: 15rem;
 }
-.opt{
-    width: 15rem;
-    height: 15rem;
-    background-size: 15rem;
-}
-.opt:hover{
-    background-color: rgb(105, 105, 105);
+.opt:hover {
+  background-color: rgb(105, 105, 105);
   border-color: #ff00d4;
   transform: translate(0.5rem, 0.5rem);
   box-shadow: -0.5rem -0.5rem rgb(184, 184, 184);
   transition: 0.6s ease-in-out;
 }
 
-#tub-item{
-    background-image: url('../amul-pdts/1L tub/Choco-Chips.png'),
-     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
-    background-repeat: no-repeat;
+#tub-item {
+  background-image: url("../amul-pdts/1L tub/Choco-Chips.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
 }
-#stk-item{
-    background-image: url('../amul-pdts/stick/duetz-k-mango.png'),
-     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
-    background-repeat: no-repeat;
+#stk-item {
+  background-image: url("../amul-pdts/stick/duetz-k-mango.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
 }
-#jumbo-item{
-    background-image: url('../amul-pdts/jumbo-cup/Jumbo-Cup-Butterscotch-Bliss.png'),
-     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
-    background-repeat: no-repeat;
+#jumbo-item {
+  background-image: url("../amul-pdts/jumbo-cup/Jumbo-Cup-Butterscotch-Bliss.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
 }
-#cup-item{
-    background-image: url('../amul-pdts/100ml/Cup-Butterscotch-Bliss.jpg'),
-     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
-    background-repeat: no-repeat;
+#cup-item {
+  background-image: url("../amul-pdts/100ml/Cup-Butterscotch-Bliss.jpg"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
 }
-#cone-item{
-    background-image: url('../amul-pdts/cone/Choco-Crunch.png'),
-     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
-    background-repeat: no-repeat;
+#cone-item {
+  background-image: url("../amul-pdts/cone/Choco-Crunch.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
 }
-#combo-item{
-    background-image: url('../amul-pdts/combo/combo-afghan-dry-fruit.png'),
-     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
-    background-repeat: no-repeat;
+#combo-item {
+  background-image: url("../amul-pdts/combo/combo-afghan-dry-fruit.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
 }
-#bulk-item{
-    background-image: url('../amul-pdts/bulk/bulk_img.png'),
-     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
-    background-repeat: no-repeat;
+#bulk-item {
+  background-image: url("../amul-pdts/bulk/bulk_img.png"),
+    linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-repeat: no-repeat;
 }
-#kulfi-item{
-    background-repeat: no-repeat;
-    background-image: url('../amul-pdts/kulfi/bombay.png'),
+#kulfi-item {
+  background-repeat: no-repeat;
+  background-image: url("../amul-pdts/kulfi/bombay.png"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
 }
 
@@ -80,97 +77,95 @@ html{
 #cup,
 #jumbo,
 #stk,
-#tub{
-    visibility: hidden;
+#tub {
+  visibility: hidden;
 }
 
+@media (width <= 768px) {
+  .pdt-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+  }
+  * {
+    font-size: 10px;
+    /* overflow-y: hidden; */
+  }
+
+  .menubar {
+    height: 4rem;
+    padding: 0.1rem;
+  }
+  .menubar > li {
+    height: 3.5rem;
+    justify-items: center;
+  }
+}
+
+@media (width <=1024px) {
+  .pdt-list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+    margin-top: 5rem;
+    align-items: center;
+  }
+  * {
+    font-size: 10px;
+  }
+}
 
 @media (width <= 768px) {
-    .pdt-list {
-      display: grid;
-      grid-template-columns: auto auto auto;
-      justify-items: center;
-    }
-    * {
-      font-size: 10px;
-      /* overflow-y: hidden; */
-    }
-  
-    .menubar {
-      height: 4rem;
-      padding: 0.1rem;
-    }
-    .menubar > li {
-      height: 3.5rem;
-      justify-items: center;
-    }
+  * {
+    font-size: 10px;
   }
-  
-  @media (width <=1024px) {
-    .pdt-list{
-      display: grid;
-      grid-template-columns: auto auto auto auto;
-      justify-items: center;
-      margin-top: 5rem;
-      align-items: center;
-    }
-    * {
-      font-size: 10px;
-    }
+  .logo {
+    margin-left: 3rem;
+  }
+}
 
+@media (width <= 425px) {
+  * {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 6px;
   }
-  
-  @media (width <= 768px) {
-    * {
-      font-size: 10px;
-    }
-    .logo {
-      margin-left: 3rem;
-    }
+  .pdt-list {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
   }
-  
-  @media (width <= 425px) {
-    * {
-      overflow-x: hidden;
-      overflow-y: scroll;
-      font-size: 6px;
-    }
-    .pdt-list {
-      display: grid;
-      grid-template-columns: auto;
-      justify-items: center;
-    }
-    .logo {
-      margin-left: 0%;
-    }
-    .nav_item {
-      justify-items: center;
-      margin-top: 0.5rem;
-      margin-left: 1rem;
-    }
-    .opt {
-      width: 50rem;
-      height: 50rem;
-      background-size: 50rem;
-    }
-    .cont {
-      z-index: 5;
-      position: relative;
-      top: -20rem;
-      font-size: initial;
-    }
-    #bulk,
-    #combo,
-    #cone,
-    #cup,
-    #jumbo,
-    #stk,
-    #tub {
-      background-size: 50rem 50rem;
-    }
+  .logo {
+    margin-left: 0%;
   }
-@media (width <= 320px){
-    .pdt-list{
-        margin-left: 0%;
-    }
+  .nav_item {
+    justify-items: center;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+  .opt {
+    width: 50rem;
+    height: 50rem;
+    background-size: 50rem;
+  }
+  .cont {
+    z-index: 5;
+    position: relative;
+    top: -20rem;
+    font-size: initial;
+  }
+  #bulk,
+  #combo,
+  #cone,
+  #cup,
+  #jumbo,
+  #stk,
+  #tub {
+    background-size: 50rem 50rem;
+  }
+}
+@media (width <= 320px) {
+  .pdt-list {
+    margin-left: 0%;
+  }
 }

@@ -6,13 +6,14 @@
 .bulk > ul {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   justify-items: center;
   row-gap: 3rem;
 }
 .pg3 > ul {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  justify-items: center;
 }
 .pg3 > ul > li > .bulk-item {
   width: 17rem;
@@ -24,8 +25,8 @@
 }
 
 .bulk-item {
-  width: 14.5rem;
-  height: 14.5rem;
+  width: 16rem;
+  height: 16rem;
   background-image: url("../amul-pdts/bulk/bulk_img.png"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
   background-repeat: no-repeat;

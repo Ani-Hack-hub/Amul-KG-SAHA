@@ -1,5 +1,5 @@
 import Menu from "./templates/menu";
-import Bulk from "./templates/amul_pdt/Bulk";
+import {Bulk, Bulk_trail} from "./templates/amul_pdt/Bulk";
 import Tub from "./templates/amul_pdt/Tub";
 import Combo from "./templates/amul_pdt/Combo";
 import Cone from "./templates/amul_pdt/Cone";
@@ -13,6 +13,9 @@ function App(elt_name) {
   console.log(elt_name.elt);
   var element;
   switch (elt_name.elt) {
+    case "Bulk":
+      element = <Bulk_trail></Bulk_trail>
+      break;
     case "Bulk -1":
       element = (
         <>

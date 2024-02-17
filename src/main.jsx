@@ -38,6 +38,10 @@ var route = createBrowserRouter([
     element: <About></About>,
   },
   {
+    path: "/amul/bulk",
+    element: <App elt={"Bulk"}></App>,
+  },
+  {
     path: "/amul/bulk-1",
     element: <App elt={"Bulk -1"}></App>,
   },
