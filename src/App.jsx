@@ -10,7 +10,7 @@ import Kulfi from "./templates/amul_pdt/Kulfi";
 import Stick from "./templates/amul_pdt/Stick";
 
 function App(elt_name) {
-  // console.log(elt_name.elt);
+  console.log(elt_name.elt);
   var element;
   switch (elt_name.elt) {
     case "Bulk -1":
