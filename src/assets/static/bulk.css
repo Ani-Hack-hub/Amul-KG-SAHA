@@ -5,10 +5,19 @@
 }
 .bulk > ul {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   margin-top: 2rem;
   justify-items: center;
   row-gap: 3rem;
+}
+.pg3 > ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.pg3 > ul > li > .bulk-item {
+  width: 17rem;
+  height: 17rem;
+  background-size: cover;
 }
 .bulk > ul > li {
   list-style: none;
@@ -20,7 +29,7 @@
   background-image: url("../amul-pdts/bulk/bulk_img.png"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
   background-repeat: no-repeat;
-  background-size: 14.5rem 14.5rem;
+  background-size: cover;
   transition: 0.3s ease-in-out;
 }
 .cont {
