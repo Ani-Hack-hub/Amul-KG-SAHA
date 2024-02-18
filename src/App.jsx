@@ -7,8 +7,8 @@ import Cup from "./templates/amul_pdt/Cup";
 import Jumbo from "./templates/amul_pdt/Jumbo";
 import Kulfi from "./templates/amul_pdt/Kulfi";
 import Stick from "./templates/amul_pdt/Stick";
-import Button from "../src/templates/Buttons";
-
+import Button from "./templates/Button_bulk";
+import Button_stk from "./templates/Button_stk";
 function App(elt_name) {
   console.log(elt_name.elt);
   var element;
@@ -49,8 +49,16 @@ function App(elt_name) {
     case "Jumbo":
       element = <Jumbo></Jumbo>;
       break;
-    case "Stick":
-      element = <Stick></Stick>;
+    case "Stick -1":
+      element = (
+        <>
+          <Button_stk></Button_stk>
+          <Stick query={1}></Stick>
+        </>
+      );
+      break;
+    case "Stick -2":
+      element = <Stick query={2}></Stick>;
       break;
     case "Cone":
       element = <Cone></Cone>;

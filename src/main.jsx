@@ -74,8 +74,12 @@ var route = createBrowserRouter([
     element: <App elt={"Kulfi"}></App>,
   },
   {
-    path: "/amul/stick",
-    element: <App elt={"Stick"}></App>,
+    path: "/amul/stick-1",
+    element: <App elt={"Stick -1"}></App>,
+  },
+  {
+    path: "/amul/stick-2",
+    element: <App elt={"Stick -2"}></App>,
   },
   {
     path: "/amul/tub",
