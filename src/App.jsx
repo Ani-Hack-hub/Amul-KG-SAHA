@@ -27,16 +27,16 @@ function App(elt_name) {
     case "Bulk -2":
       element = (
         <>
-          <Bulk MyProp={2}></Bulk>
           <Button></Button>
+          <Bulk MyProp={2}></Bulk>
         </>
       );
       break;
     case "Bulk -3":
       element = (
         <>
-          <Bulk MyProp={3}></Bulk>
           <Button></Button>
+          <Bulk MyProp={3}></Bulk>
         </>
       );
       break;
