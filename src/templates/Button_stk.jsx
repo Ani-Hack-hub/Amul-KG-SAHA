@@ -10,6 +10,7 @@ function Button() {
             <a className="page-link" id="link-1" href="/amul/stick-1">
               1
             </a>
+            
           </div>
         </li>
         <li className="page-item">
