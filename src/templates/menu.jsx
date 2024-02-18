@@ -46,7 +46,7 @@ function Menu() {
           </a>
         </li>
         <li>
-          <a href="/amul/stick">
+          <a href="/amul/stick-1">
             <div className="opt" id="stk-item"></div>
             <div className="name" id="stk">
               AMUL STICK

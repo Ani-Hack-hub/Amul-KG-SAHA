@@ -6,7 +6,7 @@ import Headbar from "./headbar.jsx";
 import "../src/assets/static/style.css";
 import "../src/assets/static/index.css";
 import Index from "./index.jsx";
-import Menu from "./templates/menu.jsx";
+import Menu from "./templates/Menu.jsx";
 import About from "./templates/About.jsx";
 import Contact from "./templates/Contact.jsx";
 import Cashew from "./templates/Cashew";
