@@ -1,34 +1,38 @@
-import "../assets/static/buttons.css";
+import "bootstrap/dist/css/bootstrap.css";
+import "../assets/static/buttons.css"
 
-export function Button_1() {
+function Button() {
   return (
-    <div className="button">
-      <div className="fwd">
-        <a href="/amul/bulk-2"></a>
-      </div>
-    </div>
-  );
-}
-export function Button_2() {
-  return (
-    <div className="button">
-      <div className="fwd">
-        <a href="/amul/bulk-3"></a>
-      </div>
-      <div className="bwd">
-        <a href="/amul/bulk-1"></a>
-      </div>
-    </div>
-  );
-}
-export function Button_3() {
-  return (
-    <div className="button">
-      <div className="bwd">
-        <a href="/amul/bulk-2"></a>
-      </div>
-    </div>
+    <nav aria-label="Page navigation example">
+          <ul className="pagination">
+        <li className="page-item">
+          <a className="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li className="page-item">
+          <a className="page-link" href="#">
+            1
+          </a>
+        </li>
+        <li className="page-item">
+          <a className="page-link" href="#">
+            2
+          </a>
+        </li>
+        <li className="page-item">
+          <a className="page-link" href="#">
+            3
+          </a>
+        </li>
+        <li className="page-item">
+          <a className="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
-// export default {Button_1, Button_2, Button_3 }
+export default Button;

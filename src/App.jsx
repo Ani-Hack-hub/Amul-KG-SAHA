@@ -1,5 +1,5 @@
 import Menu from "./templates/menu";
-import {Bulk, Bulk_trail} from "./templates/amul_pdt/Bulk";
+import { Bulk, Bulk_trail } from "./templates/amul_pdt/Bulk";
 import Tub from "./templates/amul_pdt/Tub";
 import Combo from "./templates/amul_pdt/Combo";
 import Cone from "./templates/amul_pdt/Cone";
@@ -7,20 +7,20 @@ import Cup from "./templates/amul_pdt/Cup";
 import Jumbo from "./templates/amul_pdt/Jumbo";
 import Kulfi from "./templates/amul_pdt/Kulfi";
 import Stick from "./templates/amul_pdt/Stick";
-import { Button_1, Button_2, Button_3 } from "../src/templates/Buttons";
+import Button from "../src/templates/Buttons";
 
 function App(elt_name) {
   console.log(elt_name.elt);
   var element;
   switch (elt_name.elt) {
     case "Bulk":
-      element = <Bulk_trail></Bulk_trail>
+      element = <Bulk_trail></Bulk_trail>;
       break;
     case "Bulk -1":
       element = (
         <>
+          <Button></Button>
           <Bulk MyProp={1}></Bulk>
-          <Button_1></Button_1>
         </>
       );
       break;
@@ -28,7 +28,7 @@ function App(elt_name) {
       element = (
         <>
           <Bulk MyProp={2}></Bulk>
-          <Button_2></Button_2>
+          <Button></Button>
         </>
       );
       break;
@@ -36,7 +36,7 @@ function App(elt_name) {
       element = (
         <>
           <Bulk MyProp={3}></Bulk>
-          <Button_3></Button_3>
+          <Button></Button>
         </>
       );
       break;
