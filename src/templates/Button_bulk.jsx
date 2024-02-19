@@ -6,7 +6,7 @@ function Button() {
     <nav aria-label="Page navigation example">
       <ul className="pagination">
         <li className="page-item">
-          <div className="tri" id="triangle-1">
+          <div className="tri" id="triangle-1" >
             <a className="page-link" id="link-1" href="/amul/bulk-1">
               1
             </a>
