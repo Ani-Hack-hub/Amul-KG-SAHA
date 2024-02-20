@@ -1,5 +1,5 @@
 import "../assets/static/menu.css";
-import { Over, Out } from "../assets/button-click";
+// import { Over, Out } from "../assets/button-click";
 
 function Menu() {
   var element = (

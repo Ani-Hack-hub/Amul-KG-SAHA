@@ -1,5 +1,5 @@
 import "../../assets/static/bulk.css";
-import { Over, Out } from "../../assets/button-click";
+// import { Over, Out } from "../../assets/button-click";
 
 function Bulk(order) {
   var element;
