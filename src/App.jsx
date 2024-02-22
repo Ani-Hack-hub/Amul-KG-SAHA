@@ -1,5 +1,5 @@
 import Menu from "./templates/Menu";
-import { Bulk } from "./templates/amul_pdt/Bulk";
+import { Bulk } from "./templates/amul_pdt/Amul_Bulk";
 import Tub from "./templates/amul_pdt/Tub";
 import Combo from "./templates/amul_pdt/Combo";
 import Cone from "./templates/amul_pdt/Cone";

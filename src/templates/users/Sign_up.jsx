@@ -1,12 +1,14 @@
+import database from "../../server";
 import { useState } from "react";
 import "../../assets/static/sign-up.css";
 
+
 function Sign_up() {
-  var [fname, setfname] = useState("");
-  var [sname, setsname] = useState("");
-  var [email, setemail] = useState("");
-  var [num, setnum] = useState(0);
-  var [add, setadd] = useState("");
+  let [fname, setfname] = useState("");
+  let [sname, setsname] = useState("");
+  let [email, setemail] = useState("");
+  let [num, setnum] = useState(0);
+  let [add, setadd] = useState("");
 
   const first_name = (event) => setfname(event.target.value);
   const second_name = (event) => setsname(event.target.value);
@@ -14,8 +16,11 @@ function Sign_up() {
   const number = (event) => setnum(event.target.value);
   const address = (event) => setadd(event.target.value);
   const click = () => {
-    console.log(fname, sname, email, num, add);
+    // console.log(fname, sname, email, num, add);
   };
+
+  database(fname, sname, email, num, add);
+
   return (
     <div className="sign-up">
       <label>
