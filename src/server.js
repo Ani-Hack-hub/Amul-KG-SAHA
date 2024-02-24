@@ -1,28 +1,22 @@
 import { MongoClient } from "mongodb";
-async function database(first_name, second_name, email_id, number, address) {
-  let uri = "mongodb://localhost:27017/";
-  const connection = new MongoClient(uri, {
-    version: ServerApiVersion.v2,
-    strict: false,
-    deprecationErrors: false,
-  });
-  let data = {
-    fname: first_name,
-    sname: second_name,
-    email: email_id,
-    num: number,
-    add: address,
-  };
+
+const uri = "mongodb://localhost:27017/";
+const connection = new MongoClient(uri);
+
+async function database() {
   try {
     await connection.connect();
-    const db = connection.db("User_Profiles");
-    const collection = db.collection("Sign_Up");
-    collection.insertOne(data);
-    console.log("data inserted");
-  } catch (error) {
-    console.log(error);
+    const db = connection.db("new_tab");
+    const coll = db.collection("new_tab");
+
+    // Using toArray() to await the result
+    const result = await coll.find().toArray();
+    console.log(result);
+  } catch (err) {
+    console.error(err);
   } finally {
     connection.close();
   }
 }
+
 export default database;

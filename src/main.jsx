@@ -88,7 +88,7 @@ var route = createBrowserRouter([
   },
   {
     path: "/users/sign-up",
-    // element: <Sign_up></Sign_up>,
+    element: <Sign_up></Sign_up>,
   },
 ]);
 

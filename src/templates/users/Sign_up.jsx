@@ -1,6 +1,8 @@
-import database from "../../server";
 import { useState } from "react";
 import "../../assets/static/sign-up.css";
+// import listener from "../../express.cjs";
+// import User_Add from "../../server";
+import database from "../../server";
 
 
 function Sign_up() {
@@ -16,7 +18,7 @@ function Sign_up() {
   const number = (event) => setnum(event.target.value);
   const address = (event) => setadd(event.target.value);
   const click = () => {
-    // console.log(fname, sname, email, num, add);
+    database()
   };
 
   database(fname, sname, email, num, add);
@@ -49,7 +51,7 @@ function Sign_up() {
         <textarea name="add" onChange={address} cols="30" rows="10"></textarea>
       </label>{" "}
       <br />
-      <button onClick={click}>Submit</button>
+      <button onClick={express_call}>Submit</button>
     </div>
   );
 }
