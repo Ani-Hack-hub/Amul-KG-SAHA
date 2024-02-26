@@ -5,7 +5,9 @@ import App from "./App.jsx";
 import Headbar from "./headbar.jsx";
 import "../src/assets/static/style.css";
 import "../src/assets/static/index.css";
-import Index from "./index.jsx";
+// import Index from "./index.jsx";
+// import Index from "./templates/Index.jsx";
+import Index from "./templates/Homepage.jsx";
 import Menu from "./templates/Menu.jsx";
 import About from "./templates/About.jsx";
 import Contact from "./templates/Contact.jsx";
@@ -16,7 +18,7 @@ import Sign_up from "./templates/users/Sign_up.jsx";
 var route = createBrowserRouter([
   {
     path: "/",
-    element: <Index></Index>,
+    element: <Index></Index>
   },
   {
     path: "/contact",
