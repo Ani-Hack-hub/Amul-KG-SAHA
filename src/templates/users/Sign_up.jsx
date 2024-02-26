@@ -1,38 +1,44 @@
 import { useState } from "react";
 import "../../assets/static/sign-up.css";
-// import listener from "../../express.cjs";
-// import User_Add from "../../server";
-import database from "../../server";
-
+import Insert_Data from "../../server";
+// import database from "../../server";
+import axios from "axios";
 
 function Sign_up() {
   let [fname, setfname] = useState("");
   let [sname, setsname] = useState("");
-  let [email, setemail] = useState("");
+  let [email_, setemail] = useState("");
   let [num, setnum] = useState(0);
   let [add, setadd] = useState("");
 
-  const first_name = (event) => setfname(event.target.value);
-  const second_name = (event) => setsname(event.target.value);
-  const email_in = (event) => setemail(event.target.value);
-  const number = (event) => setnum(event.target.value);
-  const address = (event) => setadd(event.target.value);
-  const click = () => {
-    database()
+  const user = {
+    first_name: fname,
+    second_name: sname,
+    email: email_,
+    number: num,
+    address: add,
   };
-
-  database(fname, sname, email, num, add);
+  const first_name_func = (event) => setfname(event.target.value);
+  const second_name_func = (event) => setsname(event.target.value);
+  const email_in = (event) => setemail(event.target.value);
+  const number_func = (event) => setnum(event.target.value);
+  const address_func = (event) => setadd(event.target.value);
+  const click = () => {
+    axios.post("/", user).then((response) => {
+      console.log(response);
+    });
+  };
 
   return (
     <div className="sign-up">
       <label>
         First Name:
-        <input type="text" onChange={first_name} name="fname" />{" "}
+        <input type="text" onChange={first_name_func} name="fname" />{" "}
       </label>{" "}
       <br />
       <label>
         Second Name:
-        <input type="text" onChange={second_name} name="sname" />{" "}
+        <input type="text" onChange={second_name_func} name="sname" />{" "}
       </label>{" "}
       <br />
       <label>
@@ -42,16 +48,21 @@ function Sign_up() {
       <br />
       <label>
         Number:
-        <input type="number" onChange={number} name="num" />{" "}
+        <input type="number" onChange={number_func} name="num" />{" "}
       </label>{" "}
       <br />
       <label>
         Address:
         {/* <input type="text" onChange={address} name="add" />{" "} */}
-        <textarea name="add" onChange={address} cols="30" rows="10"></textarea>
+        <textarea
+          name="add"
+          onChange={address_func}
+          cols="30"
+          rows="10"
+        ></textarea>
       </label>{" "}
       <br />
-      <button onClick={express_call}>Submit</button>
+      <button onClick={click}>Submit</button>
     </div>
   );
 }
