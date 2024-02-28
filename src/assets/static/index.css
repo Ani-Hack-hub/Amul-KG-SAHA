@@ -14,7 +14,7 @@
 .wrapper {
   display: inline-flex;
 }
-li {
+.second-elt>li {
   list-style: none;
   position: relative;
   top: 0;

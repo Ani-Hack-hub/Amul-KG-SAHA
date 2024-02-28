@@ -1,7 +1,3 @@
-// import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-dom/client";
-import React from "react";
-
 function Headbar() {
   var element = (
     <>
