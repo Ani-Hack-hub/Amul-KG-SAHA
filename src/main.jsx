@@ -42,18 +42,6 @@ var route = createBrowserRouter([
     element: <App elt={"Bulk"}></App>,
   },
   {
-    path: "/amul/bulk-1",
-    element: <App elt={"Bulk -1"}></App>,
-  },
-  {
-    path: "/amul/bulk-2",
-    element: <App elt={"Bulk -2"}></App>,
-  },
-  {
-    path: "/amul/bulk-3",
-    element: <App elt={"Bulk -3"}></App>,
-  },
-  {
     path: "/amul/cup",
     element: <App elt={"Cup"}></App>,
   },
@@ -74,12 +62,8 @@ var route = createBrowserRouter([
     element: <App elt={"Kulfi"}></App>,
   },
   {
-    path: "/amul/stick-1",
-    element: <App elt={"Stick -1"}></App>,
-  },
-  {
-    path: "/amul/stick-2",
-    element: <App elt={"Stick -2"}></App>,
+    path: "/amul/stick",
+    element: <App elt={"Stick"}></App>,
   },
   {
     path: "/amul/tub",

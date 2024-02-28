@@ -6,7 +6,7 @@ function Menu() {
     <section>
       <ul className="pdt-list">
         <li>
-          <a href="/amul/bulk-1">
+          <a href="/amul/bulk">
             <div className="opt" id="bulk-item" ></div>
             <div className="name" id="bulk">
               AMUL BULK
@@ -46,7 +46,7 @@ function Menu() {
           </a>
         </li>
         <li>
-          <a href="/amul/stick-1">
+          <a href="/amul/stick">
             <div className="opt" id="stk-item"></div>
             <div className="name" id="stk">
               AMUL STICK
