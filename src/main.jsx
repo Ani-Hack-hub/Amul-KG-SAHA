@@ -5,15 +5,12 @@ import App from "./App.jsx";
 import Headbar from "./headbar.jsx";
 import "../src/assets/static/style.css";
 import "../src/assets/static/index.css";
-// import Index from "./index.jsx";
-// import Index from "./templates/Index.jsx";
 import Index from "./templates/Homepage.jsx";
 import Menu from "./templates/Menu.jsx";
 import About from "./templates/About.jsx";
 import Contact from "./templates/Contact.jsx";
 import Cashew from "./templates/Cashew";
 import Golden from "./templates/Gd";
-import Sign_up from "./templates/users/Sign_up.jsx";
 
 var route = createBrowserRouter([
   {
@@ -87,11 +84,7 @@ var route = createBrowserRouter([
   {
     path: "/amul/tub",
     element: <App elt={"Tub"}></App>,
-  },
-  {
-    path: "/users/sign-up",
-    element: <Sign_up></Sign_up>,
-  },
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
