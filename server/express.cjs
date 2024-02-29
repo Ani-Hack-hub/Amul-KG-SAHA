@@ -8,7 +8,11 @@ app.use(express.json());
 app.get('/', (req, res)=>{
     res.send()
 })
+app.get('/users/sign-up', (req, res)=>{
+    res.send()
+    console.log("LISTENING at users/sign-up")
+})
 
-app.listen(3000, ()=>{
+app.listen(5173, ()=>{
     console.log("listening")
 })

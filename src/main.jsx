@@ -11,6 +11,7 @@ import About from "./templates/About.jsx";
 import Contact from "./templates/Contact.jsx";
 import Cashew from "./templates/Cashew";
 import Golden from "./templates/Gd";
+import Sign_Up from "./User/Sign_Up/Sign_Up.jsx";
 
 var route = createBrowserRouter([
   {
@@ -68,6 +69,10 @@ var route = createBrowserRouter([
   {
     path: "/amul/tub",
     element: <App elt={"Tub"}></App>,
+  },
+  {
+    path:"/users/sign-up",
+    element:<Sign_Up></Sign_Up>
   }
 ]);
 
