@@ -7,24 +7,18 @@ function Headbar() {
         </div>
         <div>
           <ul className="menubar">
-            <li className="nav_item">
-              <a href="/">HOME</a>
-            </li>
-            <li className="nav_item">
-              <a href="/amul/menu">AMUL PRODUCTS</a>
-            </li>
-            <li className="nav_item">
-              <a href="../templates/gd.html">GOLDEN DELIGHTS PRODUCTS</a>
-            </li>
-            <li className="nav_item">
-              <a href="">CASHEW NUTS</a>
-            </li>
-            <li className="nav_item">
-              <a href="">CONTACT</a>
-            </li>
-            <li className="nav_item">
-              <a href="/about">ABOUT</a>
-            </li>
+          <li className="nav_item">
+            <a href="/">HOME</a>
+          </li>
+          <li className="nav_item">
+            <a href="/amul/menu">PRODUCTS</a>
+          </li>
+          <li className="nav_item">
+            <a href="">CONTACT</a>
+          </li>
+          <li className="nav_item">
+            <a href="/about">ABOUT</a>
+          </li>
           </ul>
         </div>
       </section>
@@ -32,4 +26,5 @@ function Headbar() {
   );
   return element;
 }
+
 export default Headbar;

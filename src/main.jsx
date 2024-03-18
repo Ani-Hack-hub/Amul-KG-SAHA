@@ -9,22 +9,16 @@ import Index from "./templates/Homepage.jsx";
 import Menu from "./templates/Menu.jsx";
 import About from "./templates/About.jsx";
 import Contact from "./templates/Contact.jsx";
-import Cashew from "./templates/Cashew";
 import Golden from "./templates/Gd";
-import Sign_Up from "./User/Sign_Up/Sign_Up.jsx";
 
 var route = createBrowserRouter([
   {
     path: "/",
-    element: <Index></Index>
+    element: <Index></Index>,
   },
   {
     path: "/contact",
     element: <Contact></Contact>,
-  },
-  {
-    path: "/cashew",
-    element: <Cashew></Cashew>,
   },
   {
     path: "/golden",
@@ -69,10 +63,6 @@ var route = createBrowserRouter([
   {
     path: "/amul/tub",
     element: <App elt={"Tub"}></App>,
-  },
-  {
-    path:"/users/sign-up",
-    element:<Sign_Up></Sign_Up>
   }
 ]);
 

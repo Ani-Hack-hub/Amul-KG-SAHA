@@ -15,7 +15,6 @@ function App(elt_name) {
     case "Bulk":
       element = <Bulk></Bulk>;
       break;
-      break;
     case "Combo":
       element = <Combo></Combo>;
       break;
