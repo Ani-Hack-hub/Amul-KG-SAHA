@@ -1,5 +1,4 @@
 import "../assets/static/menu.css";
-// import { Over, Out } from "../assets/button-click";
 
 function Menu() {
   var element = (
@@ -76,20 +75,3 @@ function Menu() {
   return element;
 }
 export default Menu;
-
-// onMouseEnter={Over("bulk")}
-// onMouseEnter={Over("kulfi")}
-//             onMouseLeave={Out("kulfi")}
-//             onMouseLeave={Out("bulk")}
-// onMouseEnter={Over("tub")}
-//             onMouseLeave={Out("tub")}
-// onMouseEnter={Over("stk")}
-//             onMouseLeave={Out("stk")}
-// onMouseEnter={Over("jumbo")}
-//             onMouseLeave={Out("jumbo")}
-// onMouseEnter={Over("cup")}
-//             onMouseLeave={Out("cup")}
-// onMouseEnter={Over("cone")}
-//             onMouseLeave={Out("cone")}
-// onMouseEnter={Over("combo")}
-//             onMouseLeave={Out("combo")}

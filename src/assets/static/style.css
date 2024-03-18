@@ -14,14 +14,12 @@
   display: grid;
   grid-template-columns: auto auto;
 }
-body {
+#root {
   background-image: linear-gradient(to bottom right, #0b0b0b, #353535);
   background-repeat: no-repeat;
-  padding-bottom: 100%;
+  white-space: wrap;
+  padding: auto;
 }
-/* .remaining {
-  padding: 100%;
-} */
 .menubar {
   display: flex;
   list-style: none;
