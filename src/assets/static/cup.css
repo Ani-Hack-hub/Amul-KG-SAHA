@@ -25,10 +25,11 @@
   font-size: 1rem;
   width: 14rem;
   text-align: center;
+  color: black;
+  /* background-color: black; */
 }
 .cup-cont::first-line {
   font-weight: bolder;
-  color: black;
 }
 
 #Cup-100ml-chocolate {
