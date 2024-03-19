@@ -1,19 +1,24 @@
 import "../assets/static/index.css";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 function Index() {
+  const {text} = useTypewriter({
+    words: ['AMUL', 'GOLDEN DELIGHTS'],
+    loop: {},
+    typeSpeed:100
+  });
+
   var element;
   element = (
-    <div className="main-wrapper">
-      <div className="wrapper">
-        <div className="first-elt">LOOKING FOR</div>
-        <ul className="second-elt">
-          <li><span>ICE CREAMS</span></li>
-          <li><span>FROZEN ITEM</span></li>
-          <li><span>FROZEN FRIES</span></li>
-          <li><span>CASHEWS</span></li>
-        </ul>
-      </div>
-    </div>
+    <>
+      <h1>LOOKING FOR </h1>
+      <span>
+        {text}
+        </span>
+      <span>
+        <Cursor></Cursor>
+      </span>
+    </>
   );
   return element;
 }
