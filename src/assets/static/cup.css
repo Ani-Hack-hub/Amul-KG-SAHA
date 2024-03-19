@@ -13,6 +13,8 @@
   width: 14.5rem;
   height: 14.5rem;
   transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  background-size: 14.5rem 14.5rem;
 }
 
 .cup > ul > li > .cup-item:hover {
@@ -37,57 +39,41 @@
   z-index: -1;
   background-image: url("../amul-pdts/100ml/Cup-Choco-Chips.jpg"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
-  background-repeat: no-repeat;
-  background-size: 14.5rem 14.5rem;
 }
 #Cup-100ml-butter-scotch {
   z-index: -1;
   background-image: url("../amul-pdts/100ml/Cup-Butterscotch-Bliss.jpg"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
-  background-repeat: no-repeat;
-  background-size: 14.5rem 14.5rem;
 }
 #Cup-100ml-kesar-pista {
   z-index: -1;
   background-image: url("../amul-pdts/100ml/Cup-Kesar-Pista-Royale.jpg"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
-  background-repeat: no-repeat;
-  background-size: 14.5rem 14.5rem;
 }
 #Cup-100ml-vanilla {
   z-index: -1;
   background-image: url("../amul-pdts/100ml/Cup-Vanilla-Royale.jpg"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
-  background-repeat: no-repeat;
-  background-size: 14.5rem 14.5rem;
 }
 #Cup-100ml-alphonso {
   z-index: -1;
   background-image: url("../amul-pdts/100ml/Cup-Alphonso-Mango.jpg"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
-  background-repeat: no-repeat;
-  background-size: 14.5rem 14.5rem;
 }
 #Cup-65ml-green-pista {
   z-index: -1;
   background-image: url("../amul-pdts/100ml/green pista 65ml.png"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
-  background-repeat: no-repeat;
-  background-size: 14.5rem 14.5rem;
 }
 #Cup-55ml-strawberry {
   z-index: -1;
   background-image: url("../amul-pdts/100ml/Cup-Strawberry-55ml.jpeg"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
-  background-repeat: no-repeat;
-  background-size: 14.5rem 14.5rem;
 }
 #Cup-55ml-vanilla {
   z-index: -1;
   background-image: url("../amul-pdts/100ml/Cup-Vanilla-Royale-55ml.jpeg"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
-  background-repeat: no-repeat;
-  background-size: 14.5rem 14.5rem;
 }
 
 @media (width <= 768px) {
@@ -96,69 +82,42 @@
     grid-template-columns: auto auto auto;
     justify-items: center;
   }
-  * {
-    font-size: 10px;
-  }
-
-  .menubar {
-    height: 4rem;
-    padding: 0.1rem;
-  }
-  .menubar > li {
-    height: 3.5rem;
-    justify-items: center;
-  }
 }
-
-@media (width <=1024px) {
+@media (1440px >= width >=1024px) {
   .cup > ul {
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-items: center;
   }
-  * {
-    font-size: 12px;
-  }
 }
 
-@media (width <= 768px) {
-  * {
-    font-size: 10px;
-  }
-  .logo {
-    margin-left: 3rem;
+@media (769px <= width <= 890px) {
+  .cup-item {
+    height: 12rem;
+    width: 12rem;
+    background-size: 12rem;
   }
 }
 
 @media (width <= 425px) {
   * {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    font-size: 6px;
+    font-size: 8px;
   }
   .cup > ul {
-    margin-top: 20rem;
+    margin-top: 10rem;
     display: grid;
     grid-template-columns: auto;
     justify-items: center;
   }
-  .logo {
-    margin-left: 0%;
-  }
-  .nav_item {
-    justify-items: center;
-    margin-top: 0.5rem;
-    margin-left: 1rem;
-  }
   .cup-item {
-    width: 50rem;
-    height: 50rem;
-    background-size: 50rem;
+    width: 20rem;
+    height: 20rem;
   }
   .cup-cont {
-    z-index: 5;
     position: relative;
-    top: -30rem;
+    top: -2.9rem;
+    left: 3rem;
+    color: white;
     font-size: initial;
   }
   .cup-cont > span {
@@ -173,6 +132,6 @@
   #Cup-65ml-green-pista,
   #Cup-55ml-strawberry,
   #Cup-55ml-vanilla {
-    background-size: 50rem 50rem;
+    background-size: 20rem 20rem;
   }
 }
