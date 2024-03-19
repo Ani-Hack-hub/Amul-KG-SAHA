@@ -40,9 +40,6 @@
   box-shadow: -0.5rem -0.5rem rgb(184, 184, 184);
 }
 
-.cont {
-  visibility: hidden;
-}
 
 #frostik {
   background-image: url("../amul-pdts/stick/frostik.png"),

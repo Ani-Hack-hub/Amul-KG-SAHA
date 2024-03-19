@@ -3,81 +3,71 @@
   border-color: #ff00d4;
   transform: translate(0.5rem, 0.5rem);
   box-shadow: -0.5rem -0.5rem rgb(184, 184, 184);
+  /* transition: ; */
 }
-.cont{
-    text-align: center;
-    position: relative;
-    top: -7rem;
-    width: 14.5rem;
+
+.cone-cont {
+  text-align: center;
+  position: relative;
+  top: -5rem;
+  width: 14.5rem;
+  color: black;
 }
-.cont>span {
+.cone-cont > span {
   font-weight: bolder;
   font-weight: bold;
+  color: black;
 }
-.cone> ul {
+.cone > ul {
   list-style: none;
   display: grid;
   row-gap: auto;
+  justify-items: center;
+  align-items: center;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto;
-  margin-left: 2rem;
-  margin-top: 2rem;
+  /* margin-left: 2rem; */
+  margin-top: 3rem;
 }
-.cone-item{
-    width: 14.5rem;
-    height: 14.5rem;
-    background-repeat: no-repeat;
+.cone-item {
+  width: 14.5rem;
+  height: 14.5rem;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
 }
 
-#choco-vanilla-cont,
-#cookie-crunch-cont,
-#pista-badam-cont,
-#black-current-cont,
-#two-in-one-cont,
-#chocolate-cont,
-#butterscotch-cont{
-  visibility: hidden;
-  z-index: 1;
-  position: relative;
-  top: -6.5rem;
-  width: 14.5rem;
-  height: 5rem;
-  left: 0rem;
-  font-size: 0.9rem;
-  text-align: center;
-}
-#pista-badam{
-    background-image: url("../amul-pdts/cone/Pista-Badam.png"),
+#pista-badam {
+  background-image: url("../amul-pdts/cone/Pista-Badam.png"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
   cursor: pointer;
 }
-#choco-vanilla{
-    background-image: url("../amul-pdts/cone/choco_vanilla.png"),
+#choco-vanilla {
+  background-image: url("../amul-pdts/cone/choco_vanilla.png"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
   cursor: pointer;
 }
-#cookie-crunch{
-    background-image: url("../amul-pdts/cone/cookie_crunch.png"),
+#cookie-crunch {
+  background-image: url("../amul-pdts/cone/cookie_crunch.png"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
   cursor: pointer;
 }
-#black-current{
-    background-image: url("../amul-pdts/cone/Black-Currant_with_transparent.png"),
+#black-current {
+  background-image: url("../amul-pdts/cone/Black-Currant_with_transparent.png"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
   cursor: pointer;
 }
-#two-in-one{
-    background-image: url("../amul-pdts/cone/Two-in-One.png"),
+#two-in-one {
+  background-image: url("../amul-pdts/cone/Two-in-One.png"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
   cursor: pointer;
 }
-#chocolate{
-    background-image: url("../amul-pdts/cone/Choco-Crunch.png"),
+#chocolate {
+  background-image: url("../amul-pdts/cone/Choco-Crunch.png"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
   cursor: pointer;
 }
-#butterscotch{
-    background-image: url("../amul-pdts/cone/Butterscotch cone.png"),
+#butterscotch {
+  background-image: url("../amul-pdts/cone/Butterscotch cone.png"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
   cursor: pointer;
 }
@@ -142,17 +132,16 @@
   top: 0.7rem;
   transform: rotate(-45deg);
 }
-.menu_item{
+.menu_item {
   width: 100%;
   justify-content: center;
   border-radius: 40%;
-  padding-left:3rem;
+  padding-left: 3rem;
   padding-right: 3rem;
   background-color: white;
   color: red;
   font-weight: bolder;
 }
-
 
 @media (width <= 768px) {
   .cone > ul {
@@ -233,9 +222,9 @@
   #butterscotch-cont {
     background-size: 50rem 50rem;
   }
-  .cont{
-    font-size:initial;
+  .cont {
+    font-size: initial;
     position: relative;
     top: -20rem;
-  }  
+  }
 }

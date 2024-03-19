@@ -131,7 +131,7 @@
 #choco_browine_cont,
 #black_current_cont,
 #choco_chip_cont {
-  visibility: hidden;
+  /* visibility: hidden; */
   z-index: 1;
   position: relative;
   top: -5rem;

@@ -1,8 +1,10 @@
 .cup > ul {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  margin-top: 2rem;
-  margin-left: 2rem;
+  margin-top: 4rem;
+  list-style: none;
+  align-items: center;
+  justify-items: center;
 }
 
 .cup-item {
@@ -17,15 +19,16 @@
   transform: translate(0.5rem, 0.5rem);
   box-shadow: -0.5rem -0.5rem rgb(184, 184, 184);
 }
-.cont {
+.cup-cont {
   position: relative;
   top: -3.5rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   width: 14rem;
   text-align: center;
 }
-.cont::first-line {
+.cup-cont::first-line {
   font-weight: bolder;
+  color: black;
 }
 
 #Cup-100ml-chocolate {
@@ -83,32 +86,6 @@
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
   background-repeat: no-repeat;
   background-size: 14.5rem 14.5rem;
-}
-
-#Cup-100ml-vanilla-cont {
-  transform: translateX(1rem);
-  visibility: hidden;
-}
-#Cup-100ml-chocolate-cont {
-  visibility: hidden;
-}
-#Cup-100ml-butter-scotch-cont {
-  visibility: hidden;
-}
-#Cup-100ml-kesar-pista-cont {
-  visibility: hidden;
-}
-#Cup-100ml-alphonso-cont {
-  visibility: hidden;
-}
-#Cup-55ml-vanilla-cont {
-  visibility: hidden;
-}
-#Cup-65ml-green-pista-cont {
-  visibility: hidden;
-}
-#Cup-55ml-strawberry-cont {
-  visibility: hidden;
 }
 
 @media (width <= 768px) {
@@ -176,13 +153,13 @@
     height: 50rem;
     background-size: 50rem;
   }
-  .cont {
+  .cup-cont {
     z-index: 5;
     position: relative;
     top: -30rem;
     font-size: initial;
   }
-  .cont>span{
+  .cup-cont > span {
     font-size: initial;
     font-weight: bold;
   }

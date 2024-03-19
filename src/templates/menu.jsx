@@ -1,12 +1,22 @@
 import "../assets/static/menu.css";
 
+// function hoverin(name){
+//   const query = document.getElementById(name);
+//   query.style.visibility='visible';
+//   console.log('hi')
+// }
+// function hoverout(name){
+//   const query = document.getElementById(name);
+//   query.style.visibility='hidden';
+// }
+
 function Menu() {
   var element = (
     <section>
       <ul className="pdt-list">
         <li>
           <a href="/amul/bulk">
-            <div className="opt" id="bulk-item" ></div>
+            <div className="opt" id="bulk-item"></div>
             <div className="name" id="bulk">
               AMUL BULK
             </div>
@@ -14,7 +24,7 @@ function Menu() {
         </li>
         <li>
           <a href="/amul/combo">
-            <div className="opt" id="combo-item" ></div>
+            <div className="opt" id="combo-item"></div>
             <div className="name" id="combo">
               AMUL COMBO
             </div>
@@ -22,7 +32,7 @@ function Menu() {
         </li>
         <li>
           <a href="/amul/cone">
-            <div className="opt" id="cone-item" ></div>
+            <div className="opt" id="cone-item"></div>
             <div className="name" id="cone">
               AMUL CONE
             </div>
@@ -30,7 +40,7 @@ function Menu() {
         </li>
         <li>
           <a href="/amul/cup">
-            <div className="opt" id="cup-item" ></div>
+            <div className="opt" id="cup-item"></div>
             <div className="name" id="cup">
               AMUL CUP
             </div>

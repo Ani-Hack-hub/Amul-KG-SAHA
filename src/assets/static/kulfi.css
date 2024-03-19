@@ -42,23 +42,6 @@
   transform: translate(0.5rem, 0.5rem);
   box-shadow: -0.5rem -0.5rem rgb(184, 184, 184);
 }
-#rabdi-cont,
-#rosogolla-cont,
-#rajbhoj-cont,
-#pista-malai-cont,
-#mawa-malai-cont,
-#mawa-malai-cont,
-#badhahi-cont,
-#shahi-cont,
-#kaju-malai-cont,
-#rajwadi-cont,
-#bombay-cont,
-#koha-cont,
-#kashmiri-cont,
-#rajasthani-cont,
-#punjabi-cont {
-  visibility: hidden;
-}
 
 #punjabi {
   background-image: url("../amul-pdts/kulfi/punjabi.png"),

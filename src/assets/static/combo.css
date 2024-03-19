@@ -3,57 +3,40 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+#root {
+  padding-bottom: 6%;
+}
+
 .combo > ul {
   display: grid;
   grid-template-columns: auto auto auto auto;
   margin-top: 2rem;
   margin-left: 2rem;
   justify-items: center;
+  align-items: center;
   row-gap: 3rem;
+  list-style: none;
 }
 .combo-item {
   width: 14.5rem;
   height: 14.5rem;
   transition: 0.3s ease-in-out;
 }
-.cont {
+.combo-cont {
   position: relative;
   top: -3.5rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   width: 14rem;
   text-align: center;
   font-weight: bolder;
+  color: black;
 }
 .combo > ul > li > div:hover {
   background-color: rgb(105, 105, 105);
   border-color: #ff00d4;
   transform: translate(0.5rem, 0.5rem);
   box-shadow: -0.5rem -0.5rem rgb(184, 184, 184);
-}
-
-#combo-afghan-cont {
-  visibility: hidden;
-}
-#combo-alphon-cont {
-  visibility: hidden;
-}
-#combo-bc-cont {
-  visibility: hidden;
-}
-#combo-bs-cont {
-  visibility: hidden;
-}
-#combo-choco-cont {
-  visibility: hidden;
-}
-#combo-rajbhoj-cont {
-  visibility: hidden;
-}
-#combo-straw-cont {
-  visibility: hidden;
-}
-#combo-van-cont {
-  visibility: hidden;
 }
 
 #combo-van {

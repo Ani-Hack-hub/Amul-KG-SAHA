@@ -33,13 +33,14 @@
   background-size: cover;
   transition: 0.3s ease-in-out;
 }
-.cont {
+.bulk-cont {
   position: relative;
   top: -3.5rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   width: 14rem;
   text-align: center;
   font-weight: bolder;
+  color: black;
 }
 
 .bulk-item:hover {
@@ -47,10 +48,6 @@
   border-color: #ff00d4;
   transform: translate(0.5rem, 0.5rem);
   box-shadow: -0.5rem -0.5rem rgb(184, 184, 184);
-}
-
-.cont {
-  visibility: hidden;
 }
 
 @media (width <= 768px) {

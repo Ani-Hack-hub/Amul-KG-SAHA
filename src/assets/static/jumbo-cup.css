@@ -22,39 +22,6 @@
   font-weight: bolder;
 }
 
-#jumbo-cup-butterscotch-cont {
-  visibility: hidden;
-}
-#jumbo-cup-choco-brownie-cont {
-  visibility: hidden;
-}
-#jumbo-cup-fruit-n-nut-cont {
-  visibility: hidden;
-  top: -5.5rem;
-}
-#jumbo-cup-golden-pearl-cont {
-  visibility: hidden;
-  top: -7.5rem;
-}
-#jumbo-cup-king-alphanso-cont {
-  visibility: hidden;
-}
-#jumbo-cup-rajbhoj-cont {
-  visibility: hidden;
-  top: -6.5rem;
-}
-#jumbo-cup-shalimar-cont {
-  visibility: hidden;
-  top: -5.5rem;
-}
-#jumbo-cup-haldi-cont {
-  visibility: hidden;
-  top: -5.4rem;
-}
-#jumbo-cup-pan-nawabi-cont {
-  visibility: hidden;
-  top: -5.3rem;
-}
 #jumbo-cup-butterscotch {
   background-image: url("../amul-pdts/jumbo-cup/Jumbo-Cup-Butterscotch-Bliss.png"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);

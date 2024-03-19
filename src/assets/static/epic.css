@@ -41,29 +41,6 @@
   transform: translate(0.5rem, 0.5rem);
   box-shadow: -0.5rem -0.5rem rgb(184, 184, 184);
 }
-#choco-almon-cont,
-#strawberry-cont,
-#sweet-heart-cont,
-#choco-truffle-cont,
-#frostik-cont,
-#fundoo-chakri-cont,
-#fundoo-super-cont,
-#fundoo-currly-cont,
-#fundoo-mango-cont,
-#duetz-mango-cont,
-#duetz-raspberry-cont,
-#duetz-k-mango-cont,
-#lickz-mango-cont,
-#lickz-orange-cont,
-#choco-pop-cont,
-#coffee-bar-cont,
-#dark-c-frostik-cont,
-#dark-c-bar-cont,
-#choco-bar-cont,
-#asli-aam-cont {
-  visibility: hidden;
-}
-
 #choco-almon {
   background-image: url("../assets/stick/choco-almond.png"),
     linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
