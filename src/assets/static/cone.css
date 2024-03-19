@@ -3,13 +3,12 @@
   border-color: #ff00d4;
   transform: translate(0.5rem, 0.5rem);
   box-shadow: -0.5rem -0.5rem rgb(184, 184, 184);
-  /* transition: ; */
 }
 
 .cone-cont {
   text-align: center;
   position: relative;
-  top: -5rem;
+  top: -3.5rem;
   width: 14.5rem;
   color: black;
 }
@@ -25,9 +24,9 @@
   justify-items: center;
   align-items: center;
   grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto;
-  /* margin-left: 2rem; */
-  margin-top: 3rem;
+  margin-top: 4rem;
+  margin-bottom: -2.45rem;
+  margin-left: 2rem;
 }
 .cone-item {
   width: 14.5rem;
